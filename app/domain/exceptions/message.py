@@ -9,11 +9,11 @@ class TitleTooLongException(ApplicationException):
 
     @property
     def message(self):
-        return f'title text too long "{self.text[:255]}..."'
+        return f'Title text too long "{self.text[:255]}..."'
 
 
 @dataclass(eq=False)
 class EmptyTextException(ApplicationException):
     @property
     def message(self):
-        return 'text cannot be empty'
+        return 'Text cannot be empty.'
