@@ -23,8 +23,10 @@ class Chat(BaseEntity):
         new_chat = cls(title=title)
         new_chat.register_event(NewChatCreatedEvent(
             chat_oid=new_chat.oid,
-            title=new_chat.title.as_generic_type(),
+            chat_title=new_chat.title.as_generic_type(),
         ))
+
+        return new_chat
 
     def add_message(self, message: Message):
         self.messages.add(message)
