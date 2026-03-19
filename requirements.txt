@@ -1,3 +1,10 @@
+poetry
+pytest
+pytest-asyncio
+httpx
 fastapi
 uvicorn[all]
-poetry
+punq
+motor
+pydantic_settings
+faker
