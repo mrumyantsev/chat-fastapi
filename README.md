@@ -1,0 +1,3 @@
+# Chat on FastAPI with WebSockets, Kafka, MongoDB and DDD
+
+Under development...
